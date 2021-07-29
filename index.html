@@ -1,10 +1,521 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-<meta charset="UTF-8">
-<title>サンプル</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="css/custom.css" rel="stylesheet">
+    <title>KAZU_NYAN222 PORTFOLIO</title>
 </head>
+
 <body>
-<p>sample</p>
+    <header class="site-header sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo" height="50"
+                        class="d-inline-block align-top"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#Profile">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#Personality">Personality</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#Skill">Skill</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#Career">Career</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#Contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
+            <div class="col-md-10 p-lg-10 mx-auto">
+                <img src="img/logo.png" alt="logo" class="d-inline-block">
+                <h1 class="display-4 fw-normal">KAZU_NYAN222 PORTFOLIO</h1>
+                <p class="lead fw-normal">ポートフォリオとして、<br>
+                    私のプロフィールをまとめたサイトを<br class="d-lg-none">作成しました。
+                </p>
+                <p class="lead fw-normal">
+                    副業が可能な会社に転職したので、<br>
+                    ポートフォリオ的なものがあった方が<br>
+                    自己紹介しやすくなるかな？と思い、<br>
+                    サクっと作成しました。
+                </p>
+                <p class="lead fw-normal">last update 2021/07/29</p>
+            </div>
+
+            <div class="col-md-10 p-lg-10 mx-auto my-5" id="Profile">
+                <h2 class="display-4">Profile</h2>
+                <p class="lead">自己紹介</p>
+                <p class="lead fw-normal">はじめまして、KAZU_NYAN222と申します。<br>
+                    1993年生まれの27歳です。</p>
+                <p class="lead fw-normal">
+                    新卒で入った独立系SIerでは、<br>
+                    認証基盤関係のインフラ構築をメインで<br>
+                    5年ほど担当していました。<br>
+                </p>
+                <p class="lead fw-normal">
+                    2社目のSES企業では、<br>
+                    プログラミングしているときが<br class="d-lg-none">楽しいという思いを組んでいただき、<br>
+                    開発メインのエンジニアとして<br class="d-lg-none">
+                    採用して頂きました。<br>
+                    現在、担当している案件はSpring Bootを<br class="d-lg-none">使ったWebアプリケーション開発です。
+                </p>
+            </div>
+
+            <div class="col-md-10 p-lg-10 p-lg-12 mx-auto my-5" id="Personality">
+                <h2 class="display-4">Personality</h2>
+                <p class="lead">性格</p>
+                <p class="lead fw-normal">
+                    強みな部分<br>
+                    ●プログラミングが楽しいと思えること<br>
+                    ●集中力が高い<br>
+                    ●下流工程大好き
+                </p>
+                <p class="lead fw-normal">
+                    弱みな部分<br>
+                    ●Webデザインみたいな<br class="d-lg-none">クリエイティブな仕事が苦手<br>
+                    ●不器用<br>
+                    手先も口先も・・・・<br>
+                    ●上流工程苦手
+                </p>
+                <p class="lead fw-normal">
+                    上流工程で資料作成・調整を頑張るより<br>
+                    現場で下流工程をワイワイやってる方が<br class="d-lg-none">向いてるタイプのエンジニアです。
+                </p>
+            </div>
+
+            <div class="col-md-11 p-lg-11 mx-auto my-5" id="Skill">
+                <h2 class="display-4">Skill</h2>
+                <p class="lead">スキル</p>
+                <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+                    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                        <div class="my-3 p-3">
+                            <h2 class="display-5">インフラ</h2>
+                            <p class="lead">IceWall製品が<br class="d-lg-none">ベースにはなってしまいますが、<br>
+                                SSOに関しては<br class="d-lg-none">有識者名乗れると思います。</p>
+                            <p class="lead">
+                                ・リバプロ<br>
+                                ・認証連携(SAML)<br>
+                                ・統合Windows認証<br class="d-lg-none">(Kerberos認証)<br>
+                                ・多要素認証(MFA)<br>
+                                などは詳しい方です。</p>
+                        </div>
+                        <div class="bg-white shadow-sm mx-auto skil-contents-field">
+                            <table class="table table-borderless">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">技術</th>
+                                        <th scope="col">経験年数</th>
+                                        <th scope="col">レベル</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">IceWall</th>
+                                        <td>4年</td>
+                                        <td>
+                                            <p><span class="rating" data-rate="4.5"></span></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Linux(Redhat7)</th>
+                                        <td>5年</td>
+                                        <td>
+                                            <p><span class="rating" data-rate="3.5"></span></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Apache</th>
+                                        <td>4年</td>
+                                        <td>
+                                            <p><span class="rating" data-rate="3"></span></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Tomcat</th>
+                                        <td>4年</td>
+                                        <td>
+                                            <p><span class="rating" data-rate="2"></span></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">BIND</th>
+                                        <td>1年</td>
+                                        <td>
+                                            <p><span class="rating" data-rate="2"></span></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">JP1 AJS/IM/PFM</th>
+                                        <td>1年</td>
+                                        <td>
+                                            <p><span class="rating" data-rate="1"></span></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Active Directory</th>
+                                        <td>1年</td>
+                                        <td>
+                                            <p><span class="rating" data-rate="2"></span> </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">AWS/Azure</th>
+                                        <td>1年</td>
+                                        <td>
+                                            <p><span class="rating" data-rate="3"></span> </p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                        <div class="my-3 py-3">
+                            <h2 class="display-5">バックエンド</h2>
+                            <p class="lead">現在本業のメインです。</p>
+                        </div>
+                        <div class="bg-white shadow-sm mx-auto skil-contents-field">
+                            <table class="table table-borderless">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">技術</th>
+                                        <th scope="col">経験年数</th>
+                                        <th scope="col">レベル</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Spring Boot</th>
+                                        <td>1年</td>
+                                        <td>
+                                            <p><span class="rating" data-rate="3"></span></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Java(※)</th>
+                                        <td>3年</td>
+                                        <td>
+                                            <p><span class="rating" data-rate="3.5"></span></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">VB.NET</th>
+                                        <td>2年</td>
+                                        <td>
+                                            <p><span class="rating" data-rate="3"></span></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">C#(※)</th>
+                                        <td>1年</td>
+                                        <td>
+                                            <p><span class="rating" data-rate="2"></span></p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="lead">※学生時代に習得した技術です。<br>
+                            業務経験ではありません。<br>
+                            スカスカなので盛っています(泣)</p>
+                    </div>
+                </div>
+                <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+                    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                        <div class="my-3 p-3">
+                            <h2 class="display-5">フロントエンド</h2>
+                            <p class="lead">知識として最低限のものは<br class="d-lg-none">持っている程度です。<br>
+                                業務経験はありません。<br>
+                                デザインには自信なしです(泣)</p>
+                        </div>
+                        <div class="bg-white shadow-sm mx-auto skil-contents-field">
+                            <table class="table table-borderless">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">技術</th>
+                                        <th scope="col">経験年数</th>
+                                        <th scope="col">レベル</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">HTML</th>
+                                        <td>1年</td>
+                                        <td>
+                                            <p><span class="rating" data-rate="2.5"></span></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">CSS</th>
+                                        <td>1年</td>
+                                        <td>
+                                            <p><span class="rating" data-rate="1.5"></span></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">JavaScript・JQuery</th>
+                                        <td>1年</td>
+                                        <td>
+                                            <p><span class="rating" data-rate="3"></span></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">BootStrap</th>
+                                        <td>1年</td>
+                                        <td>
+                                            <p><span class="rating" data-rate="2"></span></p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                        <div class="my-3 py-3">
+                            <h2 class="display-5">DB</h2>
+                            <p class="lead">最低限の構築はできますが、<br>
+                                細かいチューニングは経験なし。<br>
+                                素人よりは知ってるけど、<br>
+                                有識者とは名乗れないレベルです。</p>
+                        </div>
+                        <div class="bg-white shadow-sm mx-auto skil-contents-field">
+                            <table class="table table-borderless">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">技術</th>
+                                        <th scope="col">経験年数</th>
+                                        <th scope="col">レベル</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Oracle</th>
+                                        <td>2年</td>
+                                        <td>
+                                            <p><span class="rating" data-rate="2"></span></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">MySQL</th>
+                                        <td>1年</td>
+                                        <td>
+                                            <p><span class="rating" data-rate="3"></span></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">HirDB</th>
+                                        <td>1年</td>
+                                        <td>
+                                            <p><span class="rating" data-rate="1.5"></span></p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+                    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                        <div class="my-3 p-3">
+                            <h2 class="display-5">その他ツール</h2>
+                            <p class="lead">業務でよく？使うツール類</p>
+                        </div>
+                        <div class="bg-white shadow-sm mx-auto skil-contents-field">
+                            <table class="table table-borderless">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">ツール名</th>
+                                        <th scope="col">ひとこと</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">draw.io</th>
+                                        <td>サーバ構成図が手軽に書ける</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">subversion</th>
+                                        <td>構築/運用経験あり</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">RelaxTools</th>
+                                        <td>Excel少し重くなるけど便利</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Visual Studio Code</th>
+                                        <td>エディタを使うならこれ一択</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">gdb</th>
+                                        <td>C言語デバッグする時は必須</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">valgrind</th>
+                                        <td>C言語のメモリリーク検出ツール</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                        <div class="my-3 py-3">
+                            <h2 class="display-5">保有資格</h2>
+                            <p class="lead">1社目時は資格手当があると<br>
+                                聞いてたのになかったので、<br>
+                                やる気なくしてサボっていました(笑)</p>
+                            <p class="lead">
+                                今後はお財布と相談しつつ<br>
+                                興味ある資格は積極的に<br>
+                                受けていきたいですね。
+                            </p>
+                        </div>
+                        <div class="bg-white shadow-sm mx-auto skil-contents-field">
+                            <table class="table table-borderless">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">資格</th>
+                                        <th scope="col">取得時期</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">基本情報技術者試験</th>
+                                        <td>2012.11</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">応用情報技術者試験</th>
+                                        <td>2013.12</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">情報セキュリティ<br class="d-lg-none">スペシャリスト試験</th>
+                                        <td>2015.6</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">AWS認定<br class="d-lg-none">クラウドプラクティショナー</th>
+                                        <td>2021.3</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 p-lg-6 mx-auto my-5" id="Career">
+                <h2 class="display-4">Career</h2>
+                <p class="lead">業務経歴</p>
+                <table class="table table-bordered bg-white">
+                    <thead>
+                        <tr class="career-table-header">
+                            <th scope="col">#</th>
+                            <th scope="col">年</th>
+                            <th scope="col">案件内容</th>
+                            <th scope="col">業務</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="career-table-header">
+                            <td colspan="4">1社目　独立系SIerの業務経歴</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>2016</td>
+                            <td>IceWall製品保守<br>
+                                ※IceWallやインフラの<br class="d-lg-none">勉強期間</td>
+                            <td>本業</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>2016</td>
+                            <td>ポータルサイト<br class="d-lg-none">C言語認証処理改修</td>
+                            <td>本業</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>2017</td>
+                            <td>IceWall製品保守<br>
+                                ※問い合わせ対応や<br class="d-lg-none">製品サポートサイトAzure移行</td>
+                            <td>本業</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>2017-<br class="d-lg-none">2019夏</td>
+                            <td>Windows7からWindows10へ<br class="d-lg-none">バージョンアップに伴う<br>
+                                VB.NETアプリ更改</td>
+                            <td>本業</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>2019夏-<br class="d-lg-none">2021春</td>
+                            <td>大手生命保険<br class="d-lg-none">IceWall認証基盤更改</td>
+                            <td>本業</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>2021春-<br class="d-lg-none">2021夏</td>
+                            <td>社内DX<br class="d-lg-none">IceWall認証基盤構築</td>
+                            <td>本業</td>
+                        </tr>
+                        <tr class="career-table-header">
+                            <td colspan="4">2社目　SES企業の業務経歴</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>2021夏～</td>
+                            <td>Apache StrutsからSpringBoot2.xへの<br>
+                                Webアプリケーション更改</td>
+                            <td>本業</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-light">
+        <div class="container">
+            <h2 class="display-4" id="Contact"><img src="img/contact.png" alt="contact" height="70">Contact
+            </h2>
+            <p class="lead">問い合わせ先</p>
+            <p>副業・兼業が完全自由な会社に転職しました。<br>
+                そのため、スキルアップに繋がるかつ私のスキルで<br>
+                お役に立てる副業を探しています。
+            </p>
+            <p>
+                週15時間程度(平日夜・土日)にご協力できることがあれば是非したいです！<br>
+                インフラ・バックエンド関係なら経験があるので、<br>
+                少なからず力になれると思います。<br>
+                ツイッターDMお待ちしております。
+            </p>
+            <p class="mb-0">Github　<a href="https://github.com/KAZU-NYAN222">https://github.com/KAZU-NYAN222</a></p>
+            <p class="mb-0">Twitter <a href="https://twitter.com/kazu_nyan222">https://twitter.com/kazu_nyan222</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
